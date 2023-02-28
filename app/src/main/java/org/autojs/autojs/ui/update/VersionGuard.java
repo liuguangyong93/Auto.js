@@ -31,7 +31,7 @@ public class VersionGuard {
     public void checkForDeprecatesAndUpdates() {
         mVersionService.readDeprecatedFromPrefIfNeeded(mActivity);
         if (mVersionService.isCurrentVersionDeprecated()) {
-            showDeprecatedDialogIfNeeded();
+            // showDeprecatedDialogIfNeeded();
         } else {
             checkForUpdatesIfNeeded();
         }
@@ -45,7 +45,7 @@ public class VersionGuard {
                     @Override
                     public void onNext(@io.reactivex.annotations.NonNull VersionInfo versionInfo) {
                         if (mVersionService.isCurrentVersionDeprecated()) {
-                            showDeprecatedDialogIfNeeded();
+                            //  showDeprecatedDialogIfNeeded();
                         } else {
                             showUpdateInfoIfNeeded(versionInfo);
                         }
@@ -75,7 +75,7 @@ public class VersionGuard {
                 .content(content)
                 .positiveText(R.string.text_update)
                 .negativeText(R.string.text_exit)
-                .cancelable(false)
+                .cancelable(true)
                 .autoDismiss(false)
                 .onAny((dialog, which) -> {
                     if (which == DialogAction.POSITIVE) {
