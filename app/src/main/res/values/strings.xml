@@ -244,7 +244,7 @@
     <string name="text_registering">注册中</string>
     <string name="text_register_fail">注册失败</string>
     <string name="text_register_succeed">注册成功</string>
-    <string name="text_sample">示例代码</string>
+    <string name="text_sample">头脑风暴</string>
     <string name="text_reset_to_initial_content">重置为初始内容</string>
     <string name="text_reset_succeed">重置成功</string>
     <string name="text_cannot_read_file">无法读取文件</string>

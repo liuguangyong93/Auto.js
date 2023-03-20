@@ -2,7 +2,7 @@
 .gradle
 /tools
 /local.properties
-/.idea/*
+.idea
 /.idea/workspace.xml
 /.idea/libraries
 /.idea/caches
